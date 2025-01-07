@@ -1,0 +1,8 @@
+.page {
+  display: grid;
+  grid-template-columns: 1fr minmax(200px, 345px);
+
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr;
+  }
+}

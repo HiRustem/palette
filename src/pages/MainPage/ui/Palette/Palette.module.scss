@@ -1,0 +1,48 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  padding: 20px;
+
+  @media (max-width: 768px) {
+    padding: 10px;
+  }
+
+  .selectorContainer {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    .selector {
+      min-width: 100px;
+      max-width: 200px;
+    }
+  }
+
+  .list {
+    display: flex;
+    flex-wrap: wrap;
+
+    gap: 10px;
+
+    .item {
+      cursor: pointer;
+
+      --item-background: #fff;
+
+      flex-basis: 40px;
+      height: 40px;
+      flex-grow: 0;
+      flex-shrink: 0;
+
+      background-color: var(--item-background);
+      border-radius: 12px;
+      border: 1px solid transparent;
+
+      &:hover {
+        border-color: red;
+      }
+    }
+  }
+}

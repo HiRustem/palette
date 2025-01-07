@@ -1,0 +1,19 @@
+.button {
+  cursor: pointer;
+
+  width: 100%;
+
+  padding: 10px;
+
+  background-color: transparent;
+  border-radius: 12px;
+  border: none;
+
+  &.hovered {
+    background-color: gray;
+  }
+
+  &.copied {
+    background-color: green;
+  }
+}

@@ -1,0 +1,25 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+
+  width: 100%;
+
+  .mini {
+    --mini_background: #fff;
+
+    width: 150px;
+    height: 150px;
+
+    background-color: var(--mini_background);
+    border-radius: 12px;
+  }
+
+  .list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+}
